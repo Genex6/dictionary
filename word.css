@@ -1,0 +1,161 @@
+body {
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    height: 500px;
+    padding: 20px;
+    position: absolute;
+    top: 50px;
+    left: 200px;
+    margin: 50px 100px;
+    background-color:rgba(7, 7, 7, 0.628);
+    color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 2px 4px 8px rgba(253, 253, 253, 0.989);
+}
+#result::-webkit-scrollbar{
+    background-color: transparent;
+    width: 10px;
+    height: 30px;
+    /* margin-left: 20px; */
+}
+#result::-webkit-scrollbar-thumb{
+   
+    background-color: gray;
+    border-radius: 10px;
+    
+}
+#wordInput {
+    padding: 10px;
+    font-size: 16px;
+    width: 50%;
+    text-align: center;
+    outline: none;
+    border: none;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    outline: none;
+    border: 2px solid ;
+    border-radius: 7px;
+    background-color: gray;
+    color: #f4f4f4;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#result {
+    margin-top: 20px;
+    text-align: left;
+    padding: 10px;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
+
+/* breaking point */
+@media only screen and (min-width: 1201px) and (max-width: 1600px) {
+    /* Styles for larger laptops and desktops */
+    .container h1{
+        font-size: 40px;
+       
+    }
+    .container{
+         position: absolute;
+         top: 0px;
+         left: 180px;
+         height: 500px;
+    }
+    #wordInput {
+        padding: 10px;
+        font-size: 16px;
+        width: 50%;
+        text-align: center;
+        outline: none;
+        border: none;
+        margin-bottom: 10px;
+    }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1200px){
+/* laptop small */
+.container{
+    position: absolute;
+    top: 0px;
+    left: 120px;
+    height: 450px;
+}
+body{
+    overflow: hidden;
+}
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+    /* tablet */
+    .container{
+        position: absolute;
+        top: 10px;
+        left: 30px;
+        height: 300px;
+    }
+
+}
+@media only screen and (min-width: 577px) and (max-width: 768px){
+    .container{
+        position: absolute;
+        top: -20px;
+        left: 30px;
+        height: 240px;
+    }
+    .container h1{
+        font-size: 20px;
+    }
+    button{
+        font-size: 12px;
+        padding: 4px 10px;
+    }
+    #wordInput {
+        padding: 4px;
+        font-size: 13px;
+        width: 50%;
+        text-align: center;
+        outline: none;
+        border: none;
+        margin-bottom: 10px;
+    }
+}
+@media only screen and (min-width: 0px) and (max-width: 576px){
+    .container{
+        position: absolute;
+        top: -20px;
+        left: 30px;
+        height: 240px;
+    }
+    .container h1{
+        font-size: 20px;
+    }
+    button{
+        font-size: 12px;
+        padding: 4px 10px;
+    }
+    #wordInput {
+        padding: 4px;
+        font-size: 13px;
+        width: 50%;
+        text-align: center;
+        outline: none;
+        border: none;
+        margin-bottom: 10px;
+    }
+
+}
